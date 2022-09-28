@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class SummaNumbers {
     int number;
     int sum = 0;
-    int count = 0;
+   
 
     /**
      * @param args the command line arguments
@@ -24,18 +24,13 @@ public class SummaNumbers {
         System.out.println("Ввдите число: ");
         SummaNumbers person = new SummaNumbers();
         int sum = scanner.nextInt();
-        int i = 100;
-        while (sum > i) {
-            i = i + 1;
-            if (i % 13 == 0) {
-                person.sum2();
-            }
-        }
-        System.out.println(person.sum2());
-    }
-
-    public int sum2() {
-        return count++;
+        int ed = sum%10;
+        int sot = sum /100;
+        int pik = sum%100;
+        int pik2 = pik/10;
+        System.out.println(pik2+sot+ed);
+        
+    
     }
 }
 
